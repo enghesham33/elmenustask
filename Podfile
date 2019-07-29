@@ -18,6 +18,9 @@ pod 'UICircularProgressRing', '4.1.0'
 pod 'Moya-Gloss', '3.0.0'
 pod 'RealmSwift', '3.16.2'
 pod 'IQKeyboardManagerSwift', '6.2.0'
+pod 'RxSwift'
+pod 'RxCocoa'
+pod 'RxAlamofire'
 
   target 'ElmenusTaskTests' do
     inherit! :search_paths
