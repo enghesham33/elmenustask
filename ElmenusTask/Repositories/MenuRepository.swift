@@ -22,7 +22,9 @@ public class MenuRepository {
                 if let dictionary = json as? Dictionary<String, Any> {
                     if let tagsArray = dictionary["tags"] as? [Dictionary<String, Any>] {
                         for tag in tagsArray {
-                            tags.append(Tag.parse(json: tag))
+                            let tagObj = Tag.parse(json: tag)
+                            tags.append(tagObj)
+                            LocalTag.insertTag(localTag: LocalTag.getInstance(tagName: tagObj.tagName, photoURL: tagObj.photoURL))
                         }
                     }
                 }
@@ -40,7 +42,9 @@ public class MenuRepository {
                 if let dictionary = json as? Dictionary<String, Any> {
                     if let itemsArray = dictionary["items"] as? [Dictionary<String, Any>] {
                         for item in itemsArray {
-                            items.append(Item.parse(json: item))
+                            let itemObj = Item.parse(json: item)
+                            items.append(itemObj)
+                            LocalItem.insertItem(localItem: LocalItem.getInstance(tagName: tagName, name: itemObj.name, photoURL: itemObj.photoURL, itemDesc: itemObj.itemDesc))
                         }
                     }
                 }

@@ -22,15 +22,23 @@ public class MenuViewModel {
     
     // MARK: - Actions
     func loadTagsPage(page: String) {
-        UiHelpers.showLoader()
-        repository.getTags(page: page)
-            .subscribe(onNext: { [weak self] tags in
+        if UiHelpers.isInternetAvailable() {
+            UiHelpers.showLoader()
+            repository.getTags(page: page)
+                .subscribe(onNext: { [weak self] tags in
                     self?.tagsSubject.onNext(tags)
-                UiHelpers.hideLoader()
-                }, onError: { [weak self] error in
-                    self?.tagsSubject.onError(error)
                     UiHelpers.hideLoader()
-            }).disposed(by: disposeBag)
+                    }, onError: { [weak self] error in
+                        self?.tagsSubject.onError(error)
+                        UiHelpers.hideLoader()
+                }).disposed(by: disposeBag)
+        } else if page == "1" { // to load all tags once
+            let localTags = LocalTag.getAllSavedTags()
+            tagsSubject.onNext(localTags.map({ (localTag) -> Tag in
+                Tag(tagName: localTag.tagName, photoURL: localTag.photoURL)
+            }))
+        }
+        
     }
     
     func tagsObservable() -> Observable<[Tag]> {
@@ -38,15 +46,23 @@ public class MenuViewModel {
     }
     
     func loadTagItems(tagName: String) {
-        UiHelpers.showLoader()
-        repository.getItems(tagName: tagName)
-            .subscribe(onNext: { [weak self] items in
-                self?.itemsSubject.onNext(items)
-                UiHelpers.hideLoader()
-                }, onError: { [weak self] error in
-                    self?.itemsSubject.onError(error)
+        if UiHelpers.isInternetAvailable() {
+            UiHelpers.showLoader()
+            repository.getItems(tagName: tagName)
+                .subscribe(onNext: { [weak self] items in
+                    self?.itemsSubject.onNext(items)
                     UiHelpers.hideLoader()
-            }).disposed(by: disposeBag)
+                    }, onError: { [weak self] error in
+                        self?.itemsSubject.onError(error)
+                        UiHelpers.hideLoader()
+                }).disposed(by: disposeBag)
+        } else {
+            let localItems = LocalItem.getTagItems(tagName: tagName)
+            itemsSubject.onNext(localItems.map({ (localItem) -> Item in
+                Item(id: localItem.id, name: localItem.name, photoURL: localItem.photoURL, itemDesc: localItem.itemDesc)
+            }))
+        }
+        
     }
     
     func itemsObservable() -> Observable<[Item]> {

@@ -82,11 +82,16 @@ extension MenuVC: UITableViewDataSource, UITableViewDelegate {
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        var height = UiHelpers.getLengthAccordingTo(relation: .SCREEN_HEIGHT, percentage: 15)
-        for _ in items {
-            height = height + UiHelpers.getLengthAccordingTo(relation: .SCREEN_HEIGHT, percentage: 10)
+        
+        if items.count > 0 {
+            var height = UiHelpers.getLengthAccordingTo(relation: .SCREEN_HEIGHT, percentage: 15)
+            for _ in items {
+                height = height + UiHelpers.getLengthAccordingTo(relation: .SCREEN_HEIGHT, percentage: 10)
+            }
+            return height
+        } else {
+            return UiHelpers.getLengthAccordingTo(relation: .SCREEN_HEIGHT, percentage: 100)
         }
-        return height
     }
 }
 
