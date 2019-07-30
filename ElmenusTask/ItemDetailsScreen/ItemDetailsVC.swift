@@ -29,7 +29,7 @@ class ItemDetailsVC: BaseVC {
             itemPhotoImageView.af_setImage(withURL: url)
         }
         
-        itemDescribtionLabel.text = item.description
+        itemDescribtionLabel.text = item.itemDesc
     }
 
 }
