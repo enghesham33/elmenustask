@@ -15,6 +15,8 @@
 		E85DFC3922EEE8CB00E5DA71 /* Tag.swift in Sources */ = {isa = PBXBuildFile; fileRef = E85DFC3822EEE8CB00E5DA71 /* Tag.swift */; };
 		E85DFC3B22EEE93A00E5DA71 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = E85DFC3A22EEE93A00E5DA71 /* Item.swift */; };
 		E85DFC4322EF5ED300E5DA71 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E85DFC4222EF5ED300E5DA71 /* SceneDelegate.swift */; };
+		E85DFC4622EF787200E5DA71 /* ItemDetailsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E85DFC4522EF787200E5DA71 /* ItemDetailsVC.swift */; };
+		E85DFC4822EF787D00E5DA71 /* ItemDetailsStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E85DFC4722EF787D00E5DA71 /* ItemDetailsStoryboard.storyboard */; };
 		E8C0063122EEDE0600BE2D10 /* MenuStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E8C0063022EEDE0600BE2D10 /* MenuStoryboard.storyboard */; };
 		E8C0063322EEE1D100BE2D10 /* MenuVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8C0063222EEE1D100BE2D10 /* MenuVC.swift */; };
 		E8C0063522EEE20F00BE2D10 /* MenuCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8C0063422EEE20F00BE2D10 /* MenuCell.swift */; };
@@ -119,6 +121,8 @@
 		E85DFC3822EEE8CB00E5DA71 /* Tag.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tag.swift; sourceTree = "<group>"; };
 		E85DFC3A22EEE93A00E5DA71 /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
 		E85DFC4222EF5ED300E5DA71 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		E85DFC4522EF787200E5DA71 /* ItemDetailsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemDetailsVC.swift; sourceTree = "<group>"; };
+		E85DFC4722EF787D00E5DA71 /* ItemDetailsStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ItemDetailsStoryboard.storyboard; sourceTree = "<group>"; };
 		E8C0063022EEDE0600BE2D10 /* MenuStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MenuStoryboard.storyboard; sourceTree = "<group>"; };
 		E8C0063222EEE1D100BE2D10 /* MenuVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuVC.swift; sourceTree = "<group>"; };
 		E8C0063422EEE20F00BE2D10 /* MenuCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuCell.swift; sourceTree = "<group>"; };
@@ -274,6 +278,15 @@
 			path = Repositories;
 			sourceTree = "<group>";
 		};
+		E85DFC4422EF77CE00E5DA71 /* ItemDetailsScreen */ = {
+			isa = PBXGroup;
+			children = (
+				E85DFC4522EF787200E5DA71 /* ItemDetailsVC.swift */,
+				E85DFC4722EF787D00E5DA71 /* ItemDetailsStoryboard.storyboard */,
+			);
+			path = ItemDetailsScreen;
+			sourceTree = "<group>";
+		};
 		E8C91A9122E721C80017048C = {
 			isa = PBXGroup;
 			children = (
@@ -302,6 +315,7 @@
 				E8C91A9D22E721C80017048C /* AppDelegate.swift */,
 				E8C91AD322E724560017048C /* BaseVC.swift */,
 				E8C91B4922E726FA0017048C /* MenuScreen */,
+				E85DFC4422EF77CE00E5DA71 /* ItemDetailsScreen */,
 				E85DFC3C22EEF1A900E5DA71 /* ViewModels */,
 				E85DFC3D22EEF1B600E5DA71 /* Repositories */,
 				E8C91AD522E724740017048C /* Utils */,
@@ -529,6 +543,7 @@
 			files = (
 				E8C0063122EEDE0600BE2D10 /* MenuStoryboard.storyboard in Resources */,
 				E8C91AAA22E721C90017048C /* LaunchScreen.storyboard in Resources */,
+				E85DFC4822EF787D00E5DA71 /* ItemDetailsStoryboard.storyboard in Resources */,
 				E8C91ACF22E723F50017048C /* Localizable.strings in Resources */,
 				E8C91AA722E721C90017048C /* Assets.xcassets in Resources */,
 				E8C91AA522E721C80017048C /* Main.storyboard in Resources */,
@@ -645,6 +660,7 @@
 				E8C91B1022E724740017048C /* NavigationBarUtils.swift in Sources */,
 				E8C91B3222E724740017048C /* IntExtensions.swift in Sources */,
 				E8C91B4122E724740017048C /* UIFontExtensions.swift in Sources */,
+				E85DFC4622EF787200E5DA71 /* ItemDetailsVC.swift in Sources */,
 				E8C91B1B22E724740017048C /* DictionaryExtensions.swift in Sources */,
 				E8C91B3C22E724740017048C /* UIImageViewExtensions.swift in Sources */,
 				E8C91B2E22E724740017048C /* CharacterExtensions.swift in Sources */,

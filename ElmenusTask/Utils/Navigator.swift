@@ -17,8 +17,8 @@ public class Navigator {
         self.navigationController = navController
     }
     
-//    public func navigateToLogin() {
-//        let vc = LoginVC.buildVC()
-//        self.navigationController.pushViewController(vc, animated: true)
-//    }
+    public func navigateToItemDetails(item: Item) {
+        let vc = ItemDetailsVC.buildVC(item: item)
+        self.navigationController.pushViewController(vc, animated: true)
+    }
 }

@@ -91,6 +91,10 @@ extension MenuVC: UITableViewDataSource, UITableViewDelegate {
 }
 
 extension MenuVC: MenuCellDelegate {
+    func navigateToItemDetails(item: Item) {
+        self.navigator.navigateToItemDetails(item: item)
+    }
+    
     func updateItems(tagName: String) {
         let tagNameWithoutSpace = tagName.replacingOccurrences(of: " ", with: "%20")
         self.menuViewModel.loadTagItems(tagName: tagNameWithoutSpace)
