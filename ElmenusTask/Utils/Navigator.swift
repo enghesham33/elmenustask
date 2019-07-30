@@ -19,6 +19,8 @@ public class Navigator {
     
     public func navigateToItemDetails(item: Item) {
         let vc = ItemDetailsVC.buildVC(item: item)
-        self.navigationController.pushViewController(vc, animated: true)
+        vc.hero.isEnabled = true
+        self.navigationController.presentVC(vc)
+//        self.navigationController.pushViewController(vc, animated: true)
     }
 }

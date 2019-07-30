@@ -21,7 +21,7 @@ pod 'IQKeyboardManagerSwift', '6.2.0'
 pod 'RxSwift'
 pod 'RxCocoa'
 pod 'RxAlamofire'
-
+pod 'Hero'
   target 'ElmenusTaskTests' do
     inherit! :search_paths
     # Pods for testing

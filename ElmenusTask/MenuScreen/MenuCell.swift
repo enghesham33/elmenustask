@@ -11,7 +11,7 @@ import UIKit
 public protocol MenuCellDelegate: class {
     func loadNewPage()
     func updateItems(tagName: String)
-    func navigateToItemDetails(item: Item)
+    func navigateToItemDetails(item: Item, itemImageView: UIImageView)
 }
 
 class MenuCell: UITableViewCell {
@@ -60,8 +60,8 @@ extension MenuCell: UITableViewDataSource, UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         // go to item details
-        print("Go to item details with shared element transition")
-        delegate.navigateToItemDetails(item: items.get(indexPath.row)!)
+        let cell = tableView.cellForRow(at: indexPath) as! ItemsTableViewCell
+        delegate.navigateToItemDetails(item: items.get(indexPath.row)!, itemImageView: cell.itemImageView)
     }
 }
 

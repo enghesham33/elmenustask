@@ -9,6 +9,7 @@
 import UIKit
 import RxSwift
 import Toast_Swift
+import Hero
 
 class MenuVC: BaseVC {
 
@@ -96,7 +97,11 @@ extension MenuVC: UITableViewDataSource, UITableViewDelegate {
 }
 
 extension MenuVC: MenuCellDelegate {
-    func navigateToItemDetails(item: Item) {
+    func navigateToItemDetails(item: Item, itemImageView: UIImageView) {
+        itemImageView.hero.id = "itemImageView"
+//        let itemDetailsVC = ItemDetailsVC.buildVC(item: item)
+//        itemDetailsVC.hero.isEnabled = true
+//        self.presentVC(itemDetailsVC)
         self.navigator.navigateToItemDetails(item: item)
     }
     

@@ -24,27 +24,38 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="close" translatesAutoresizingMaskIntoConstraints="NO" id="7oy-A4-tOd">
+                                <rect key="frame" x="8" y="44" width="41.5" height="32.5"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
                             <constraint firstItem="AK1-9h-DTe" firstAttribute="trailing" secondItem="1b8-qk-4eG" secondAttribute="trailing" constant="8" id="7Ow-xJ-ZtO"/>
                             <constraint firstItem="1MW-dS-c2z" firstAttribute="width" secondItem="AK1-9h-DTe" secondAttribute="width" multiplier="0.6" id="EjI-Wd-Z40"/>
+                            <constraint firstItem="7oy-A4-tOd" firstAttribute="top" secondItem="AK1-9h-DTe" secondAttribute="top" id="WxO-vI-Y27"/>
                             <constraint firstItem="1MW-dS-c2z" firstAttribute="centerX" secondItem="AK1-9h-DTe" secondAttribute="centerX" id="a7n-q9-c7o"/>
                             <constraint firstItem="1b8-qk-4eG" firstAttribute="top" secondItem="1MW-dS-c2z" secondAttribute="bottom" constant="16" id="r3t-hG-meE"/>
                             <constraint firstItem="1b8-qk-4eG" firstAttribute="leading" secondItem="AK1-9h-DTe" secondAttribute="leading" constant="8" id="sSx-N9-JBD"/>
+                            <constraint firstItem="7oy-A4-tOd" firstAttribute="height" secondItem="AK1-9h-DTe" secondAttribute="height" multiplier="0.04" id="udk-Re-H6s"/>
+                            <constraint firstItem="7oy-A4-tOd" firstAttribute="leading" secondItem="AK1-9h-DTe" secondAttribute="leading" constant="8" id="w2D-Rd-6Jq"/>
                             <constraint firstItem="1MW-dS-c2z" firstAttribute="top" secondItem="AK1-9h-DTe" secondAttribute="top" constant="25" id="wOK-Rm-5Fb"/>
+                            <constraint firstItem="7oy-A4-tOd" firstAttribute="width" secondItem="AK1-9h-DTe" secondAttribute="width" multiplier="0.1" id="xmO-VO-QNb"/>
                             <constraint firstItem="1MW-dS-c2z" firstAttribute="height" secondItem="AK1-9h-DTe" secondAttribute="height" multiplier="0.15" id="yq9-ft-HoE"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="AK1-9h-DTe"/>
                     </view>
                     <connections>
+                        <outlet property="closeImageView" destination="7oy-A4-tOd" id="sDQ-vn-ynB"/>
                         <outlet property="itemDescribtionLabel" destination="1b8-qk-4eG" id="tIV-Qx-bkS"/>
                         <outlet property="itemPhotoImageView" destination="1MW-dS-c2z" id="xKr-m3-Ryg"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="FfR-Ty-JRF" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="330" y="-259"/>
+            <point key="canvasLocation" x="327.536231884058" y="-259.15178571428572"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="close" width="24" height="24"/>
+    </resources>
 </document>

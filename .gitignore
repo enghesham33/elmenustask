@@ -1015,3 +1015,58 @@ Pods/Target Support Files/RxSwift/RxSwift-prefix.pch
 Pods/Target Support Files/RxSwift/RxSwift-umbrella.h
 Pods/Target Support Files/RxSwift/RxSwift.modulemap
 Pods/Target Support Files/RxSwift/RxSwift.xcconfig
+Pods/Hero/README.md
+Pods/Hero/Sources/HeroCompatible.swift
+Pods/Hero/Sources/HeroContext.swift
+Pods/Hero/Sources/HeroModifier+Advanced.swift
+Pods/Hero/Sources/HeroModifier+HeroStringConvertible.swift
+Pods/Hero/Sources/HeroModifier.swift
+Pods/Hero/Sources/HeroPlugin.swift
+Pods/Hero/Sources/HeroTargetState.swift
+Pods/Hero/Sources/HeroTypes.swift
+Pods/Hero/Sources/HeroViewControllerDelegate.swift
+Pods/Hero/Sources/SwiftSupport.swift
+Pods/Hero/Sources/Animator/HeroAnimatorViewContext.swift
+Pods/Hero/Sources/Animator/HeroCoreAnimationViewContext.swift
+Pods/Hero/Sources/Animator/HeroDefaultAnimator.swift
+Pods/Hero/Sources/Animator/HeroViewPropertyViewContext.swift
+Pods/Hero/Sources/Debug Plugin/HeroDebugPlugin.swift
+Pods/Hero/Sources/Debug Plugin/HeroDebugView.swift
+Pods/Hero/Sources/Extensions/Array+HeroModifier.swift
+Pods/Hero/Sources/Extensions/CALayer+Hero.swift
+Pods/Hero/Sources/Extensions/CAMediaTimingFunction+Hero.swift
+Pods/Hero/Sources/Extensions/CG+Hero.swift
+Pods/Hero/Sources/Extensions/DispatchQueue+Hero.swift
+Pods/Hero/Sources/Extensions/UIKit+Hero.swift
+Pods/Hero/Sources/Extensions/UIView+Hero.swift
+Pods/Hero/Sources/Extensions/UIViewController+Hero.swift
+Pods/Hero/Sources/Parser/HeroStringConvertible.swift
+Pods/Hero/Sources/Parser/Lexer.swift
+Pods/Hero/Sources/Parser/Nodes.swift
+Pods/Hero/Sources/Parser/Parser.swift
+Pods/Hero/Sources/Parser/Regex.swift
+Pods/Hero/Sources/Preprocessors/BasePreprocessor.swift
+Pods/Hero/Sources/Preprocessors/CascadePreprocessor.swift
+Pods/Hero/Sources/Preprocessors/ConditionalPreprocessor.swift
+Pods/Hero/Sources/Preprocessors/DefaultAnimationPreprocessor.swift
+Pods/Hero/Sources/Preprocessors/IgnoreSubviewModifiersPreprocessor.swift
+Pods/Hero/Sources/Preprocessors/MatchPreprocessor.swift
+Pods/Hero/Sources/Preprocessors/SourcePreprocessor.swift
+Pods/Hero/Sources/Transition/HeroProgressRunner.swift
+Pods/Hero/Sources/Transition/HeroTransition+Animate.swift
+Pods/Hero/Sources/Transition/HeroTransition+Complete.swift
+Pods/Hero/Sources/Transition/HeroTransition+CustomTransition.swift
+Pods/Hero/Sources/Transition/HeroTransition+Interactive.swift
+Pods/Hero/Sources/Transition/HeroTransition+Start.swift
+Pods/Hero/Sources/Transition/HeroTransition+UINavigationControllerDelegate.swift
+Pods/Hero/Sources/Transition/HeroTransition+UITabBarControllerDelegate.swift
+Pods/Hero/Sources/Transition/HeroTransition+UIViewControllerTransitioningDelegate.swift
+Pods/Hero/Sources/Transition/HeroTransition.swift
+Pods/Hero/Sources/Transition/HeroTransitionState.swift
+Pods/Pods.xcodeproj/xcuserdata/heshamdonia.xcuserdatad/xcschemes/Hero.xcscheme
+Pods/Target Support Files/Hero/Hero-dummy.m
+Pods/Target Support Files/Hero/Hero-Info.plist
+Pods/Target Support Files/Hero/Hero-prefix.pch
+Pods/Target Support Files/Hero/Hero-umbrella.h
+Pods/Target Support Files/Hero/Hero.modulemap
+Pods/Target Support Files/Hero/Hero.xcconfig
