@@ -13,8 +13,8 @@ public class MenuViewModel {
     
     private var repository: MenuRepository!
     let disposeBag = DisposeBag()
-    let tagsSubject = BehaviorSubject(value: [Tag]())
-    let itemsSubject = BehaviorSubject(value: [Item]())
+    let tagsSubject = PublishSubject<[Tag]>()//BehaviorSubject(value: [Tag]())
+    let itemsSubject = PublishSubject<[Item]>()
     
     public init(repository: MenuRepository) {
         self.repository = repository

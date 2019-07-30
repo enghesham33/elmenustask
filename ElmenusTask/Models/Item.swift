@@ -13,9 +13,9 @@ public struct Item {
     let id: Int
     let name: String
     let photoURL: String
-    let description: String
+    let itemDesc: String
     
     public static func parse(json: Dictionary<String, Any>) -> Item {
-        return Item(id: json["id"] as? Int ?? 0, name: json["name"] as? String ?? "", photoURL: json["photoUrl"] as? String ?? "", description: json["description"] as? String ?? "")
+        return Item(id: json["id"] as? Int ?? 0, name: json["name"] as? String ?? "", photoURL: json["photoUrl"] as? String ?? "", itemDesc: json["description"] as? String ?? "")
     }
 }
